@@ -1,0 +1,85 @@
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField]
+    private float speed;
+    [SerializeField]
+    private float jumpForce;
+    private int jumpCount, maxJumps = 1;
+
+    private Rigidbody2D rb;
+    private Animator animator;
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //Mover
+        float inputX = Input.GetAxis("Horizontal");
+        rb.linearVelocityX = speed *  inputX;
+        
+        //Rotación
+        if (inputX > 0)
+        {
+            transform.eulerAngles = Vector3.zero;
+        }
+        else if (inputX < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        
+        
+        //Animación
+        //Correr
+        if (inputX != 0)
+        {
+            animator.SetBool("Run", true);
+        }
+        else
+        {
+            animator.SetBool("Run", false);
+        }
+        
+        Collider2D[] temp = Physics2D.OverlapCircleAll(transform.position, 0.01f);
+        bool isGrounded = false;
+        for (int i = 0; i < temp.Length; i++)
+        {
+            if (temp[i].tag == "Ground")
+            {
+                isGrounded = true;
+                
+            }
+        }
+
+        if (isGrounded == true)
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("Falling", false);
+            jumpCount = 0;
+            Debug.Log("Toco Suelo");
+        }
+        else
+        {
+            if (jumpCount == 0)
+            {
+                jumpCount++;
+            }
+            animator.SetBool("Falling", true);
+        }
+
+        //Saltar
+        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
+        {
+            rb.AddForce(Vector2.up * jumpForce);
+            animator.SetBool("Jump", true);
+            jumpCount++;
+        }
+    }
+}
