@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     private float speed;
     [SerializeField]
     private float jumpForce;
-    private int jumpCount, maxJumps = 1;
+    private int jumpCount;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -75,9 +75,9 @@ public class PlayerController : MonoBehaviour
         }
 
         //Saltar
-        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
+        if (Input.GetButtonDown("Jump") && jumpCount < GameManager.instance.gameData.MaxJumps)
         {
-            rb.AddForce(Vector2.up * jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             animator.SetBool("Jump", true);
             jumpCount++;
         }
