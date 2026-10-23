@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Jump", false);
             animator.SetBool("Falling", false);
             jumpCount = 0;
-            Debug.Log("Toco Suelo");
+            //Debug.Log("Toco Suelo");
         }
         else
         {
