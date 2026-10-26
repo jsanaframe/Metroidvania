@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float jumpForce;
     private int jumpCount;
+    private int comboCount;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -23,6 +24,10 @@ public class PlayerController : MonoBehaviour
     {
         //Mover
         float inputX = Input.GetAxis("Horizontal");
+        if (comboCount > 0)
+        {
+            inputX = 0;
+        }
         rb.linearVelocityX = speed *  inputX;
         
         //Rotación
@@ -34,7 +39,6 @@ public class PlayerController : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        
         
         //Animación
         //Correr
@@ -75,11 +79,44 @@ public class PlayerController : MonoBehaviour
         }
 
         //Saltar
-        if (Input.GetButtonDown("Jump") && jumpCount < GameManager.instance.gameData.MaxJumps)
+        if (Input.GetButtonDown("Jump") && jumpCount < GameManager.instance.gameData.MaxJumps && comboCount == 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             animator.SetBool("Jump", true);
             jumpCount++;
+        }
+
+        //Ataque
+        if (Input.GetButtonDown("Attack") && isGrounded == true)
+        {
+            comboCount = Mathf.Clamp(comboCount + 1, 0, 2);
+            animator.SetInteger("Combo", comboCount);
+        }
+
+        
+    }
+    
+    public void FinishAttack1()
+    {
+        if (comboCount <= 1)
+        {
+            comboCount = 0;
+            animator.SetInteger("Combo", comboCount);
+        }
+    }
+    
+    public void FinishAttack2()
+    {
+        comboCount = 0;
+        animator.SetInteger("Combo", comboCount);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
+            //Llamaremos a la funcion del enemigo para recibir daño
+            //Debug.Log("Funciona");
         }
     }
 }
