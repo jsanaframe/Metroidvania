@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour
     private float speed;
     [SerializeField]
     private float jumpForce;
+    
     private int jumpCount;
     private int comboCount;
+    
+    private bool canMove = true;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -22,6 +25,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (canMove == false)
+        {
+            return;
+        }
+        
         //Mover
         float inputX = Input.GetAxis("Horizontal");
         if (comboCount > 0)
@@ -115,8 +123,25 @@ public class PlayerController : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
+            other.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.gameData.Damage);
             //Llamaremos a la funcion del enemigo para recibir daño
             //Debug.Log("Funciona");
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        GameManager.instance.gameData.Life -= damage;
+        if (GameManager.instance.gameData.Life <= 0 && canMove == true)
+        {
+            //MUERTE
+            animator.SetTrigger("Dead");
+            canMove = false;
+        }
+        else if (GameManager.instance.gameData.Life > 0)
+        {
+            //HIT
+            animator.SetTrigger("Hit");
         }
     }
 }

@@ -4,14 +4,23 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField]
     protected float speed;
-
     [SerializeField]
     protected float distanceToAttack;
+    [SerializeField]
+    protected float attackRate;
+    [SerializeField]
+    protected float damage;
+    [SerializeField]
+    protected float life;
+    protected float timePass;
 
     protected bool following;
+    protected bool attacking;
+    
     protected Transform player;
     protected Rigidbody2D rb;
     protected Animator animator;
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected void Start()
@@ -23,6 +32,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
+        timePass += Time.deltaTime;
         //Movimiento
         if (following == true)
         {
@@ -44,8 +54,25 @@ public class EnemyController : MonoBehaviour
                 //Que ataque
                 rb.linearVelocityX = 0;
                 animator.SetBool("Run", false);
-                Attack();
+                //Attack();
+                //Invoke("Attack", 1.2f); //Lo hace infinito
+                //InvokeRepeating("Attack", 1f, 2f); //Lo hace infinto
+                attacking = true;
             }
+            else
+            {
+                attacking = false;
+            }
+        }
+
+        if (attacking == true)
+        {
+            if (timePass >= attackRate)
+            {
+                Attack();
+                timePass = 0;
+            }
+            
         }
     }
 
@@ -58,8 +85,39 @@ public class EnemyController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Debug.Log("Hacer daño al player");
+            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+        }
+        /*if (other.tag == "Player")
+        {
             player = other.transform;
             following = true;
+        }*/
+    }
+
+    public void SetPlayer(Transform _player)
+    {
+        player = _player;
+        following = true;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        life -= damage;
+        if (life <= 0 && following)
+        {
+            animator.SetTrigger("Dead");
+            following = false;
+        }
+        else if (life > 0)
+        {
+            animator.SetTrigger("Hit");
         }
     }
+    
+    /*public void SetPlayerExit(Transform _player)
+    {
+        player = _player;
+        following = false;
+    }*/
 }
