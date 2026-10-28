@@ -129,19 +129,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float _damage)
     {
-        GameManager.instance.gameData.Life -= damage;
+        GameManager.instance.gameData.Life -= _damage;
         if (GameManager.instance.gameData.Life <= 0 && canMove == true)
         {
             //MUERTE
             animator.SetTrigger("Dead");
             canMove = false;
+            rb.linearVelocityX = 0;
         }
         else if (GameManager.instance.gameData.Life > 0)
         {
             //HIT
             animator.SetTrigger("Hit");
+            comboCount = 0;
+            animator.SetInteger("Combo", comboCount);
         }
     }
 }

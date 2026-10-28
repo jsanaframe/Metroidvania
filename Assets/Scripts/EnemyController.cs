@@ -101,13 +101,16 @@ public class EnemyController : MonoBehaviour
         following = true;
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float _damage)
     {
-        life -= damage;
+        life -= _damage;
         if (life <= 0 && following)
         {
             animator.SetTrigger("Dead");
             following = false;
+            rb.linearVelocityX = 0;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            gameObject.GetComponent<Collider2D>().enabled = false;
         }
         else if (life > 0)
         {
