@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class GoblinController : EnemyController
 {
+    [SerializeField] private GameObject lanzaPrefab;
+    [SerializeField] private Transform lanzaSpawnPoint;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +15,10 @@ public class GoblinController : EnemyController
     void Update()
     {
         base.Update();
+    }
+
+    public void GoblinLanza()
+    {
+        Instantiate(lanzaPrefab, lanzaSpawnPoint.position, lanzaSpawnPoint.rotation);
     }
 }
