@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     private Image manaBar;
     [SerializeField]
     private TextMeshProUGUI pocionesText;
+    [SerializeField]
+    private Transform [] spawnPoint;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +19,11 @@ public class LevelManager : MonoBehaviour
         UpdateLifeBar();
         UpdateManaBar();
         UpdatePocionesText();
+        
+        Transform player =  GameObject.FindWithTag("Player").transform;
+        
+        player.position = spawnPoint[GameManager.instance.doorToGo].position;
+        player.rotation = spawnPoint[GameManager.instance.doorToGo].rotation;
     }
 
     // Update is called once per frame

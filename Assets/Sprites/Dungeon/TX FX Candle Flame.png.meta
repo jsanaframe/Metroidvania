@@ -1,0 +1,1609 @@
+fileFormatVersion: 2
+guid: ea9b8d077fdc4e84cb0a77aa4c7ce71b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4547575024944948457
+    second: TX FX Candle Flame_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX FX Candle Flame_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 20
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4284f146b3c1f30800000000000000
+      internalID: 4547575024944948457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 20
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdc40e7694156743ac1bfdabb2798b1
+      internalID: -1660860242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 20
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8940659a3e7892f47810a40a56cca2b8
+      internalID: 237933533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 20
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ce343f214dbbe4984e7b48116c9f2b
+      internalID: 252779816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 36
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398ce097500fbde4e96c272c71fc77f7
+      internalID: 1998272467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 20
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e307a4fde32acad4b92ffb5eb7997485
+      internalID: 1418538172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 36
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cc35260b66c104b9ebb07858072b5e
+      internalID: 306881078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 20
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6670a0f116099374da5296c3a75655bb
+      internalID: 413813804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 116
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22704e27ecfc5f4cb33002e3623ad58
+      internalID: 1899004206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_9
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 116
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc57b53ea159644f92b0b015c8b7465
+      internalID: -1819936424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 116
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4952db353143b4d9cd8bc7085755b8
+      internalID: -1847439997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 116
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7791b18b3cfb34543b4c1b15126f9b27
+      internalID: 668214526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 116
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24869a01f5db2b47b593e986b3a76c3
+      internalID: -377867466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 116
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c110de893961db04fa86c8c6ccf9c8d7
+      internalID: 1499583968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 116
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f9d0aedacfbb04c9647e12c23ec07e
+      internalID: 1758159313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_15
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 116
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d95f522e4c1eb149a4a1cacffdb4363
+      internalID: 1947304038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_16
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 100
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889061efeaed07d48ac2f4c4cf05c8c7
+      internalID: 630547218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 100
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f058c66b87e24c0499a1e9ce8dbb534b
+      internalID: -1795821450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_18
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 100
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477ae38634e3f4641b214c17b54fc5b1
+      internalID: 1274627737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 100
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1564ccaf0220b43bedb143794c0f43
+      internalID: -111287799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 100
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdfd47585d7d6b4d92e5bd8d8dc8204
+      internalID: -341456971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 100
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2fdc816c1b9ef488771643bec620fb
+      internalID: -1552477668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_22
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 100
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c7f79892c594249affe4034d78002c
+      internalID: 1162845974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_23
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 100
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413a1fc692d5f38438d28790cd61afa3
+      internalID: 410079518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 84
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b466d5f6aad4ea44b522e1a3f2f1485
+      internalID: 560853060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_25
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 84
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1193510ce40497e4398cd5ebf70ca974
+      internalID: 985160171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 84
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3e62cdb1c8af546ba17161db7b836d
+      internalID: 1548981595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_27
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 84
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494022b2573e452478ca37896b7c8c55
+      internalID: -651153596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_28
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 84
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11469f1a60d3e1842b46be0a81e3ff89
+      internalID: -307768751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_29
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 84
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ba39594d7b33046b2b2b9792195158
+      internalID: -817423673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 84
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c580d53ec487d45889ba937862c8ef
+      internalID: -489975279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_31
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 84
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bcd8d8464bebf43b2deae4bc0c7f30
+      internalID: 1140436307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_32
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 68
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390d16d97f61d084fb0287425cbea669
+      internalID: -1244078346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_33
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a7c0bce46a3bf46a1846f764762cc6
+      internalID: -1958174141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_34
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 68
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578cd7240f5603846af59df6b4cd8900
+      internalID: -1179312028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_35
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 68
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b9786a2fa0af140bb339fdb56b5b37
+      internalID: 524016192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_36
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 68
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0589e7816e040bf4ca8f2874b5c3d770
+      internalID: -1924483343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 68
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9823cd73daaf0f64793d9b72243c8228
+      internalID: -634443167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_38
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 68
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cd9e687d22401409175a1fc2872b3f
+      internalID: -385216879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_39
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 68
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c60771de233b6546b630cd7bfe20030
+      internalID: -458841007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 52
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96975e77c41551b43a73ee40df3a51a3
+      internalID: 1294652243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_41
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 52
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05101dda31bf8bf4388a85c0ccf35812
+      internalID: -855385576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_42
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 52
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f70186e9c4ca4e428cec033e78dee00
+      internalID: 1835374751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_43
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 52
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484892758c192dd40b28bc7e78d703ff
+      internalID: -578263989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_44
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 52
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bf8135f6c391c449097219a34b66db
+      internalID: 859493023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_45
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 52
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7c049e36da03b44b5345c2142e7ccc
+      internalID: 1418279670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_46
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 52
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5859c6cebb2df46bdb305bb6fd9fed
+      internalID: -373877661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_47
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 52
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb0710d32924c5459bf58c343adb812
+      internalID: 577939036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_48
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 36
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be532b630235e94db7c6ece5982dd6c
+      internalID: 365928836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_49
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 36
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11f9c500ac8e13448fc953ff86c6a55
+      internalID: -913334023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_50
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 36
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a70f9e2e6abb4844826106a887de65a
+      internalID: -1068005514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_51
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 36
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639c2090e4a4fc941b3d6ed4bd313a9d
+      internalID: 114873046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_52
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 36
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329c7aaedf3bf9041965cd764a499f37
+      internalID: 2081374883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_53
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 36
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e428113f7aec0408f439c031529931
+      internalID: 270147392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_54
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 20
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d17ea9c40a3004d987e9d8447a456a
+      internalID: -1157802250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_55
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 20
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f469b653bfa2fb14483c62ff9e24f2a2
+      internalID: -1130754555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_56
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 4
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad19689d06f0fc04098cf8c7ecd95f90
+      internalID: 595320412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_57
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 4
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7e7a7970d02da47be5ccdaa77fe517
+      internalID: -433399929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_58
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 4
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ca8fb1c3a80d144b0045e1c307a5db
+      internalID: 1266285203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_59
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 4
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e8e109adba46a47a6afe3b8fb48ee6
+      internalID: 9615007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_60
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 4
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e013693a3a96944da78cdd2a6baa6dd
+      internalID: 860432977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_61
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 4
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a910695552655e5439cb013a2acb2544
+      internalID: 1235350298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_62
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 4
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560d0b27ba8568e4893accf77e0be714
+      internalID: -1871017803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX FX Candle Flame_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d69894ce505c2469ac593bbfd904a4
+      internalID: 1678801231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5213ac222e0662942b35897f16e89ae6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":16.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TX FX Candle Flame_0: 4547575024944948457
+      TX FX Candle Flame_1: 1899004206
+      TX FX Candle Flame_10: -1847439997
+      TX FX Candle Flame_11: 668214526
+      TX FX Candle Flame_12: -377867466
+      TX FX Candle Flame_13: 1499583968
+      TX FX Candle Flame_14: 1758159313
+      TX FX Candle Flame_15: 1947304038
+      TX FX Candle Flame_16: 630547218
+      TX FX Candle Flame_17: -1795821450
+      TX FX Candle Flame_18: 1274627737
+      TX FX Candle Flame_19: -111287799
+      TX FX Candle Flame_2: -1660860242
+      TX FX Candle Flame_20: -341456971
+      TX FX Candle Flame_21: -1552477668
+      TX FX Candle Flame_22: 1162845974
+      TX FX Candle Flame_23: 410079518
+      TX FX Candle Flame_24: 560853060
+      TX FX Candle Flame_25: 985160171
+      TX FX Candle Flame_26: 1548981595
+      TX FX Candle Flame_27: -651153596
+      TX FX Candle Flame_28: -307768751
+      TX FX Candle Flame_29: -817423673
+      TX FX Candle Flame_3: 237933533
+      TX FX Candle Flame_30: -489975279
+      TX FX Candle Flame_31: 1140436307
+      TX FX Candle Flame_32: -1244078346
+      TX FX Candle Flame_33: -1958174141
+      TX FX Candle Flame_34: -1179312028
+      TX FX Candle Flame_35: 524016192
+      TX FX Candle Flame_36: -1924483343
+      TX FX Candle Flame_37: -634443167
+      TX FX Candle Flame_38: -385216879
+      TX FX Candle Flame_39: -458841007
+      TX FX Candle Flame_4: 252779816
+      TX FX Candle Flame_40: 1294652243
+      TX FX Candle Flame_41: -855385576
+      TX FX Candle Flame_42: 1835374751
+      TX FX Candle Flame_43: -578263989
+      TX FX Candle Flame_44: 859493023
+      TX FX Candle Flame_45: 1418279670
+      TX FX Candle Flame_46: -373877661
+      TX FX Candle Flame_47: 577939036
+      TX FX Candle Flame_48: 365928836
+      TX FX Candle Flame_49: -913334023
+      TX FX Candle Flame_5: 1998272467
+      TX FX Candle Flame_50: -1068005514
+      TX FX Candle Flame_51: 114873046
+      TX FX Candle Flame_52: 2081374883
+      TX FX Candle Flame_53: 270147392
+      TX FX Candle Flame_54: -1157802250
+      TX FX Candle Flame_55: -1130754555
+      TX FX Candle Flame_56: 595320412
+      TX FX Candle Flame_57: -433399929
+      TX FX Candle Flame_58: 1266285203
+      TX FX Candle Flame_59: 9615007
+      TX FX Candle Flame_6: 1418538172
+      TX FX Candle Flame_60: 860432977
+      TX FX Candle Flame_61: 1235350298
+      TX FX Candle Flame_62: -1871017803
+      TX FX Candle Flame_63: 1678801231
+      TX FX Candle Flame_7: 306881078
+      TX FX Candle Flame_8: 413813804
+      TX FX Candle Flame_9: -1819936424
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
