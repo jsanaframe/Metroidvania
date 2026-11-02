@@ -22,6 +22,9 @@ public class GameData
     private float damage;
     [SerializeField]
     private int currency;
+
+    [SerializeField]
+    private int potionsCount;
     
 
     public float Life
@@ -63,5 +66,11 @@ public class GameData
     {
         get { return currency; }
         set { currency = value; }
+    }
+
+    public int PotionsCount
+    {
+        get { return potionsCount; }
+        set { potionsCount = value; }
     }
 }
