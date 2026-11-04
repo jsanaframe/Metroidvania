@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameData gameData;
     public int doorToGo;
+    public string saveSlot;
 
     void Awake()
     {
@@ -19,7 +20,6 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,5 +30,18 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SaveData()
+    {
+        //JSON
+        string data = JsonUtility.ToJson(gameData);
+        PlayerPrefs.SetString(saveSlot, data);
+    }
+
+    public void LoadData()
+    {
+        string data = PlayerPrefs.GetString(saveSlot);
+        gameData = JsonUtility.FromJson<GameData>(data);
     }
 }
