@@ -4,7 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class SaveStone : MonoBehaviour
 {
-    [SerializeField] private GameObject arrow;
+    [SerializeField]
+    private GameObject arrow;
+    [SerializeField]
+    private ParticleSystem particles;
 
     private void Update()
     {
@@ -18,6 +21,8 @@ public class SaveStone : MonoBehaviour
                 GameManager.instance.gameData.SavePosition = transform.position;
                 //curar, recargar pociones etc...
                 GameManager.instance.SaveData();
+                particles.Play();
+                arrow.SetActive(false);
             }
         }
     }

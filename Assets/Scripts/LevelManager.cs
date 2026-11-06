@@ -21,9 +21,17 @@ public class LevelManager : MonoBehaviour
         UpdatePocionesText();
         
         Transform player =  GameObject.FindWithTag("Player").transform;
-        
-        player.position = spawnPoint[GameManager.instance.doorToGo].position;
-        player.rotation = spawnPoint[GameManager.instance.doorToGo].rotation;
+
+        if (GameManager.instance.isFromLoad == true)
+        {
+            player.position = GameManager.instance.gameData.SavePosition;
+            GameManager.instance.isFromLoad = false;
+        }
+        else
+        {
+            player.position = spawnPoint[GameManager.instance.doorToGo].position;
+            player.rotation = spawnPoint[GameManager.instance.doorToGo].rotation;
+        }
     }
 
     // Update is called once per frame
