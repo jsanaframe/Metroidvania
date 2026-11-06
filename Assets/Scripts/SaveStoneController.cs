@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,9 +7,21 @@ public class SaveStone : MonoBehaviour
 {
     [SerializeField]
     private GameObject arrow;
+    
     [SerializeField]
     private ParticleSystem particles;
+    
+    [SerializeField]
+    private SpriteRenderer brilloPiedra;
+    [SerializeField]
+    private float animSpeed;
 
+
+    private void Start()
+    {
+        StartCoroutine(BrilloPiedra());
+    }
+    
     private void Update()
     {
         if (arrow.activeInHierarchy == true)
@@ -48,7 +61,32 @@ public class SaveStone : MonoBehaviour
         }
         
     }
-    
-    
+
+    IEnumerator BrilloPiedra()
+    {
+        float t = 0;
+        
+        while (t < 1)
+        {
+            t += Time.deltaTime * animSpeed;
+            float alpha = Mathf.Lerp(0, 1, t);
+            Color tempColor = brilloPiedra.color;
+            tempColor.a = alpha;
+            brilloPiedra.color = tempColor;
+            yield return null;
+        }
+        
+        while (t > 0)
+        {
+            t -= Time.deltaTime * animSpeed;
+            float alpha = Mathf.Lerp(0, 1, t);
+            Color tempColor = brilloPiedra.color;
+            tempColor.a = alpha;
+            brilloPiedra.color = tempColor;
+            yield return null;
+        }
+        
+        StartCoroutine(BrilloPiedra());
+    }
     
 }
