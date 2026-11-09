@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     private TextMeshProUGUI pocionesText;
     [SerializeField]
     private Transform [] spawnPoint;
+    [SerializeField]
+    private GameObject gemsPanel, gameOverPanel, victoriaPanel;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,5 +55,18 @@ public class LevelManager : MonoBehaviour
     public void UpdatePocionesText()
     {
         pocionesText.text = "X " + GameManager.instance.gameData.PotionsCount.ToString();
+    }
+
+    public void ShowGemMessage(string message)
+    {
+        gemsPanel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = message;
+        gemsPanel.transform.GetChild(1).GetComponent<Button>().Select();
+        gemsPanel.SetActive(true);
+    }
+
+    public void GemContinueButton()
+    {
+        Time.timeScale = 1;
+        gemsPanel.SetActive(false);
     }
 }

@@ -26119,6 +26119,9 @@ MonoBehaviour:
   spawnPoint:
   - {fileID: 1421030524}
   - {fileID: 159570878}
+  gemsPanel: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  victoriaPanel: {fileID: 0}
 --- !u!4 &1606838925
 Transform:
   m_ObjectHideFlags: 0
@@ -27166,6 +27169,10 @@ PrefabInstance:
     - target: {fileID: 2583486812749120124, guid: 8a80bf6e8fcc25943ad8ecbe7798aea4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052076151164529758, guid: 8a80bf6e8fcc25943ad8ecbe7798aea4, type: 3}
+      propertyPath: sceneName
+      value: Dungeon
       objectReference: {fileID: 0}
     - target: {fileID: 8377668018941432970, guid: 8a80bf6e8fcc25943ad8ecbe7798aea4, type: 3}
       propertyPath: m_Name
