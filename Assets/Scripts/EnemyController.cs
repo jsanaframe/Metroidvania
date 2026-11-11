@@ -20,6 +20,8 @@ public class EnemyController : MonoBehaviour
     protected Transform player;
     protected Rigidbody2D rb;
     protected Animator animator;
+
+    protected bool death = false;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +34,10 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
+        if (death == true)
+        {
+            return;
+        }
         timePass += Time.deltaTime;
         //Movimiento
         if (following == true)
@@ -108,6 +114,7 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetTrigger("Dead");
             following = false;
+            death = true;
             rb.linearVelocityX = 0;
             rb.bodyType = RigidbodyType2D.Kinematic;
             gameObject.GetComponent<Collider2D>().enabled = false;

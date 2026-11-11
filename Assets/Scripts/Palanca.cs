@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Palanca : MonoBehaviour
 {
+    //[SerializeField]
+    //private int id;
     [SerializeField]
     private Animator anim;
     
@@ -10,6 +12,19 @@ public class Palanca : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        
+        /*for (int i = 0; i < GameManager.instance.scenarioData.DoorOpen.Count; i++) 
+        {
+            if (GameManager.instance.scenarioData.DoorOpen[id] == true)
+            {
+                OpenDoor();
+            }
+        }*/
+        
+        if (GameManager.instance.scenarioData.DoorOpen == true)
+        {
+            OpenDoor();
+        }
     }
 
     // Update is called once per frame
@@ -22,9 +37,16 @@ public class Palanca : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Palanca");
-            anim.SetTrigger("Activate");
-            GameObject.Find("Puerta").gameObject.GetComponent<Animator>().SetBool("Open", true);
+            OpenDoor();
         }
+    }
+
+    void OpenDoor()
+    {
+        Debug.Log("Palanca");
+        anim.SetTrigger("Activate");
+        GameObject.Find("Puerta").gameObject.GetComponent<Animator>().SetBool("Open", true);
+        GameObject.Find("Puerta").gameObject.GetComponent<Collider2D>().enabled = false;
+        GameManager.instance.scenarioData.DoorOpen = true;
     }
 }

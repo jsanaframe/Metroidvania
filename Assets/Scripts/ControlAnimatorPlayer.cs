@@ -18,4 +18,9 @@ public class ControlAnimatorPlayer : MonoBehaviour
     {
         player.FinishAttack2();
     }
+
+    public void FinishHardAttack()
+    {
+        player.FinishHardAttack();
+    }
 }

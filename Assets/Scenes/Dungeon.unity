@@ -298,6 +298,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prota
       objectReference: {fileID: 0}
+    - target: {fileID: 6641451076759567321, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
+      propertyPath: fuerza
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641451076759567321, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
+      propertyPath: fireballPrefab
+      value: 
+      objectReference: {fileID: 5232805116297938347, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+    - target: {fileID: 6641451076759567321, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
+      propertyPath: fireballSpawnPoint
+      value: 
+      objectReference: {fileID: 691732134}
     - target: {fileID: 8482334131060477465, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -340,7 +352,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8321330545936342734, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 691732134}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
 --- !u!4 &125695184 stripped
@@ -3761,6 +3776,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &691732133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691732134}
+  m_Layer: 0
+  m_Name: FireballSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &691732134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691732133}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.63, y: -0.31225562, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143777377}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &710600386
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,6 +4070,7 @@ GameObject:
   - component: {fileID: 751262226}
   - component: {fileID: 751262225}
   - component: {fileID: 751262224}
+  - component: {fileID: 751262227}
   m_Layer: 0
   m_Name: Puerta
   m_TagString: Untagged
@@ -4128,6 +4175,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &751262227
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751262223}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.15625, y: 2.0625}
+    newSize: {x: 1.15625, y: 2.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.15625, y: 2.0625}
+  m_EdgeRadius: 0
 --- !u!1001 &786752010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5572,7 +5665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1000148898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98025,7 +98118,7 @@ GameObject:
   - component: {fileID: 1142171017}
   m_Layer: 0
   m_Name: TX Dungeon Props_160
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104342,11 +104435,14 @@ MonoBehaviour:
     mana: 10
     maxMana: 10
     maxJumps: 1
-    damage: 5
+    damage: 2
     currency: 0
     potionsCount: 7
     scene: 1
     savePosition: {x: 0, y: 0, z: 0}
+  scenarioData:
+    doorOpen: 0
+    boss1Defeated: 0
   doorToGo: 0
   saveSlot: 
   isFromLoad: 0
@@ -104457,6 +104553,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 248838166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2143777377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8321330545936342734, guid: cf083e509604d0649938fa58bb5802d1, type: 3}
+  m_PrefabInstance: {fileID: 125695183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3250467108993241289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -1979340952130120757, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1979340952130120757, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.9965444
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0301918
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735042722982902514, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232805116297938347, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_Name
+      value: FireMagic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232805116297938347, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bcdc4949590ac394cb468323a0e7baf2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -104481,3 +104651,4 @@ SceneRoots:
   - {fileID: 751262226}
   - {fileID: 732675019}
   - {fileID: 679859426}
+  - {fileID: 3250467108993241289}

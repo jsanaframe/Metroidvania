@@ -15,6 +15,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private LevelManager lm;
+    [SerializeField]
+    private GameObject fireballPrefab;
+    [SerializeField]
+    private Transform fireballSpawnPoint;
+    [SerializeField]
+    private float fuerza = 10f;
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -103,7 +110,27 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("Combo", comboCount);
         }
 
+        //HardAttack
+        if (Input.GetButtonDown("HardAttack") && isGrounded == true)
+        {
+            animator.SetTrigger("HardAttack");
+            canMove = false;
+            rb.linearVelocityX = 0;
+        }
         
+        //Magic
+        if (Input.GetButtonDown("Magic") && isGrounded == true)
+        {
+            if (GameManager.instance.gameData.Mana <= 0)
+            {
+                return;
+            }
+            animator.SetTrigger("Magic");
+            GameObject clone = Instantiate(fireballPrefab, fireballSpawnPoint.position, fireballSpawnPoint.rotation);
+            clone.GetComponent<Rigidbody2D>().AddForce(transform.right * fuerza);
+            GameManager.instance.gameData.Mana -= 2;
+            lm.UpdateManaBar();
+        }
     }
     
     public void FinishAttack1()
@@ -147,7 +174,13 @@ public class PlayerController : MonoBehaviour
             //HIT
             animator.SetTrigger("Hit");
             comboCount = 0;
+            canMove = true;
             animator.SetInteger("Combo", comboCount);
         }
+    }
+
+    public void FinishHardAttack()
+    {
+        canMove = true;
     }
 }
