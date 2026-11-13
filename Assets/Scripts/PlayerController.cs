@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private int comboCount;
     
     private bool canMove = true;
+    private bool cooldownObjeto = false;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -131,6 +133,42 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.gameData.Mana -= 2;
             lm.UpdateManaBar();
         }
+        
+        //Utilizar Gema Health
+        float inputH = Input.GetAxis("UtilizarGemaH");
+        if (inputH > 0 && cooldownObjeto == false && GameManager.instance.gameData.Life != GameManager.instance.gameData.MaxLife && GameManager.instance.gameData.HealthPotionsCount > 0)
+        {
+            Debug.Log("Tomar pocion vida");
+            GameManager.instance.gameData.HealthPotionsCount -= 1;
+            GameManager.instance.gameData.Life = Mathf.Clamp(GameManager.instance.gameData.Life + 10, 0, GameManager.instance.gameData.MaxLife);
+            StartCoroutine(CoolDown(2f));
+            lm.UpdateLifeBar();
+            lm.UpdatehealthPocionesText();
+            
+        }
+        
+        //Utilizar Gema Mana
+        float inputM = Input.GetAxis("UtilizarGemaM");
+        if (inputM > 0 && cooldownObjeto == false && GameManager.instance.gameData.Mana != GameManager.instance.gameData.MaxMana && GameManager.instance.gameData.ManaPotionsCount > 0)
+        {
+            Debug.Log("Tomar pocion Mana");
+            GameManager.instance.gameData.ManaPotionsCount -= 1;
+            GameManager.instance.gameData.Mana = Mathf.Clamp(GameManager.instance.gameData.Mana + 2, 0, GameManager.instance.gameData.MaxMana);
+            StartCoroutine(CoolDown(2f));
+            lm.UpdateManaBar();
+            lm.UpdateManaPocionesText();
+            
+        }
+        
+    }
+
+    IEnumerator CoolDown(float waitTime)
+    {
+        cooldownObjeto = true;
+        Debug.Log("Inicio CoolDown de " + waitTime);
+        yield return new WaitForSeconds(waitTime);
+        Debug.Log("Acabado CoolDown de " + waitTime);
+        cooldownObjeto = false;
     }
     
     public void FinishAttack1()

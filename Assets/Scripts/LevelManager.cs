@@ -9,7 +9,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Image manaBar;
     [SerializeField]
-    private TextMeshProUGUI pocionesText;
+    private TextMeshProUGUI healthPocionesText;
+    [SerializeField]
+    private TextMeshProUGUI manaPocionesText;
     [SerializeField]
     private Transform [] spawnPoint;
     [SerializeField]
@@ -20,7 +22,8 @@ public class LevelManager : MonoBehaviour
     {
         UpdateLifeBar();
         UpdateManaBar();
-        UpdatePocionesText();
+        UpdatehealthPocionesText();
+        UpdateManaPocionesText();
         
         Transform player =  GameObject.FindWithTag("Player").transform;
 
@@ -52,9 +55,14 @@ public class LevelManager : MonoBehaviour
         manaBar.fillAmount = GameManager.instance.gameData.Mana/GameManager.instance.gameData.MaxMana;
     }
 
-    public void UpdatePocionesText()
+    public void UpdatehealthPocionesText()
     {
-        pocionesText.text = "X " + GameManager.instance.gameData.PotionsCount.ToString();
+        healthPocionesText.text = "X " + GameManager.instance.gameData.HealthPotionsCount.ToString();
+    }
+    
+    public void UpdateManaPocionesText()
+    {
+        manaPocionesText.text = "X " + GameManager.instance.gameData.ManaPotionsCount.ToString();
     }
 
     public void ShowGemMessage(string message)

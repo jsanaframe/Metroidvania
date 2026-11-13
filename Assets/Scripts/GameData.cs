@@ -24,7 +24,10 @@ public class GameData
     private int currency;
 
     [SerializeField]
-    private int potionsCount;
+    private int healthPotionsCount;
+    
+    [SerializeField]
+    private int manaPotionsCount;
 
     [SerializeField]
     private int scene;
@@ -42,7 +45,8 @@ public class GameData
         maxJumps = 1;
         damage = 10f;
         currency = 0;
-        potionsCount = 3;
+        healthPotionsCount = 3;
+        manaPotionsCount = 1;
         scene = 1;
         savePosition = Vector3.zero;
     }
@@ -88,10 +92,16 @@ public class GameData
         set { currency = value; }
     }
 
-    public int PotionsCount
+    public int HealthPotionsCount
     {
-        get { return potionsCount; }
-        set { potionsCount = value; }
+        get { return healthPotionsCount; }
+        set { healthPotionsCount = value; }
+    }
+
+    public int ManaPotionsCount
+    {
+        get { return manaPotionsCount; }
+        set { manaPotionsCount = value; }
     }
 
     public int Scene
